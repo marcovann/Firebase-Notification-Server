@@ -1,0 +1,4 @@
+.firebaserc
+functions/node_modules/*
+functions/serviceAccountKey.json
+public/*
