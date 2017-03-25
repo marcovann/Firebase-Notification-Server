@@ -1,0 +1,25 @@
+{
+  "rules": {
+    "users": {
+      "$uid": {
+        ".write": "$uid === auth.uid"
+      },
+      ".read": "auth != null"
+    },
+    "fcm": {
+      "$uid": {
+        ".write": "$uid === auth.uid"
+      },
+			".read": "true"
+    } , 
+    "globalmessages":{
+    	".write": "auth != null",
+      ".read": "auth != null"
+    },
+    "chat": {
+      ".write": "auth != null",
+      ".read": "auth != null"
+    }
+  }
+}
+
